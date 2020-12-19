@@ -58,7 +58,7 @@ nav
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-    border-bottom: 1px solid rgba(255,255,255,.2);
+     
 }
 
 .brand
@@ -66,24 +66,16 @@ nav
     width: 2rem;
 }
 
-.menu i
-{
-    font-size: 3.5rem;
-    color: #fafafa;
-    cursor: pointer;
-}
+ 
 
-.close i
-{
-    color: #ebebeb;
-}
+ 
 
 .list
 {
     width: 25rem;
     height: 100vh;
     max-width: 35%;
-    background-color: #d7d7d7;
+    background-color: white;
     position: fixed;
     top: 0;
     right: 0;
@@ -123,7 +115,7 @@ nav
     position: absolute;
     left: 0;
     bottom: 0;
-   height: 15rem;
+   height: 40rem;
     background: url(".github/images/wave-large.png") center no-repeat;
     background-size: cover;
     width: 100%;
