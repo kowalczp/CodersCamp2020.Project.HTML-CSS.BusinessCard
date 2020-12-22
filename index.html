@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href = "style.css">
     <link rel="stylesheet" href="style-nav-list.css" type="text/css">
     <link rel="stylesheet" href="style-form.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,10 +25,10 @@
                 <input type="checkbox" id="toggle"/>
                  
                 <div class="menu">
-                    <a href="#">O nas</a>
+                    <a href="https://napaluchu.waw.pl/adopcje/jak-adoptowac/" target="_blank">O ADOPCJI</a>
                     
-                    <a href="#">Jak pomóc?</a>
-                    <a href="#">Kontakt</a>
+                    <a href="https://napaluchu.waw.pl/jak-pomoc/pomoc-w-spacerach/"  target="_blank">WOLONTARIAT</a>
+                    <a href="#">KONTAKT</a>
                      
                 </div>             
             </div>
@@ -35,6 +37,8 @@
     <main>
     <section class="dogs">
          
+          
+    
          
 
     </section>
@@ -51,28 +55,19 @@
   
            
             <div class="activities-grid">
-                <div class="activities-grid-item star-gazing list animation-area wrapper">
+                <div class="activities-grid-item star-gazing   wrapper">
 
                     
-                    <h1>Jak wybrać psa dla siebie?</h1>
+                    <h1 class="title-heading">Jak wybrać psa dla siebie?</h1>
                     <p>Zanim przyjedziesz do schroniska przejrzyj ogłoszenia na naszej stronie i za pomocą formularza skontaktuj 
                         się z wolontariuszami, którzy pomogą Ci wybrać psa dla siebie </p>
-                        <ul class="box-area">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+  
   
                 </div>
 
                 <div class="activities-grid-item hiking star-gazing list animation-area wrapper">
                   <i class="icon ion-md-compass"></i>
-                  <h1>Postępowanie z psem po adopcji</h1>
+                  <h1 class="title-heading">Postępowanie z psem po adopcji</h1>
                   <p>Adoptujący zwierzęta z naszego Schroniska mają możliwość skorzystania z bezpłatnej porady behawioralnej.
                        Porady odbywają się w Schronisku po wcześniejszym uzgodnieniu dokładnej daty i godziny i są dostępne przez okres 3 miesięcy od daty adopcji. Wizytę można umówić w Biurze Adopcji</p>
                   <ul class="box-area">
@@ -95,14 +90,16 @@
                     <div >
                    
                         <div class="title">
-                          <h1>FORMULARZ PRZEDADOPCYJNY</h1>
+                          <h1 class="title-heading">Umów się na spacer przedadopcyjny</h1>
                         </div>
                         <div class="contact-form">
                           <div class="input-fields">
                             <input type="text" class="input" placeholder="Imię">
                             <input type="text" class="input" placeholder="Nazwisko">
                             <input type="text" class="input" placeholder="Numer telefonu">
-                            <input type="text" class="input" placeholder="Subject">
+                             
+                            <h3 class="formh">Wybierz datę:</h3>
+                            <input type="date" id="start" name="trip-start" value="2020-12-23" min="2018-01-01" max="2025-12-31">
                           </div>
                           <div class="msg">
                             <textarea placeholder="Uwagi"></textarea>
@@ -124,6 +121,11 @@
                
   
           </div>
+    </section>
+    <section class="foot">
+      
+ 
+    
     </section>
    </main>   
 </body>

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+     
 }
 
 html
@@ -18,18 +19,10 @@ a{
 
  p{
      font-size: 1.6rem;
+     text-align: justify;
  }
 
-img{
-   
-    width: 100px;
-    max-width: 200px;
  
-     
-   
- 
-   
-}
  
 
 section{
@@ -62,7 +55,7 @@ header{
     text-align: right;
     height: 80px;
     line-height: 60px;
-    font-size: large;
+    font-size: 25px;
     margin-left: 50px;
     opacity: 0.6;
     
@@ -94,7 +87,7 @@ label {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     label {
         display: block;
         cursor: pointer;
@@ -120,18 +113,22 @@ label {
  
 
 
+
 .dogs
 {
     width: 100%;
     height: 80vh;
+    background: -o-linear-gradient(315deg,rgba(49,24,131,0.7) 0%, rgba(72,56,149,0.5) 100%),
+    url(".github/images/Img_h6.jpg") center no-repeat;
     background: linear-gradient(135deg,rgba(49,24,131,0.7) 0%, rgba(72,56,149,0.5) 100%),
     url(".github/images/Img_h6.jpg") center no-repeat;
     background-size: cover;
     position: relative;
-    animation: slide 20s infinite;
+    -webkit-animation: slide 20s infinite;
+            animation: slide 20s infinite;
 }
 
-@keyframes slide{
+@-webkit-keyframes slide{
     25%{
         background: linear-gradient(135deg,rgba(49,24,131,0.7) 0%, rgba(72,56,149,0.5) 100%),
         url(".github/images/Img_h9.jpg") center no-repeat;
@@ -166,6 +163,49 @@ label {
     }
 }
 
+@keyframes slide{
+    25%{
+        background: -o-linear-gradient(315deg,rgba(49,24,131,0.7) 0%, rgba(72,56,149,0.5) 100%),
+        url(".github/images/Img_h9.jpg") center no-repeat;
+        background: linear-gradient(135deg,rgba(49,24,131,0.7) 0%, rgba(72,56,149,0.5) 100%),
+        url(".github/images/Img_h9.jpg") center no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 80vh;
+    }
+    50%{
+        background: -o-linear-gradient(315deg,rgba(49,24,131,0.7) 0%, rgba(72,56,149,0.5) 100%),
+        url(".github/images/Img_h2.jpg") center no-repeat;
+        background: linear-gradient(135deg,rgba(49,24,131,0.7) 0%, rgba(72,56,149,0.5) 100%),
+        url(".github/images/Img_h2.jpg") center no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 80vh;
+    }
+    75%{
+        background: -o-linear-gradient(315deg,rgba(49,24,131,0.7) 0%, rgba(72,56,149,0.5) 100%),
+        url(".github/images/Img_h5.jpg") center no-repeat;
+        background: linear-gradient(135deg,rgba(49,24,131,0.7) 0%, rgba(72,56,149,0.5) 100%),
+        url(".github/images/Img_h5.jpg") center no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 80vh;
+    }
+    100%{
+        background: -o-linear-gradient(315deg,rgba(49,24,131,0.7) 0%, rgba(72,56,149,0.5) 100%),
+        url(".github/images/Img_h13.jpg") center no-repeat;
+        background: linear-gradient(135deg,rgba(49,24,131,0.7) 0%, rgba(72,56,149,0.5) 100%),
+        url(".github/images/Img_h13.jpg") center no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 80vh;
+    }
+}
+
 .dogs::before{
     content: "";
     position: absolute;
@@ -179,34 +219,53 @@ label {
 
 }
 
-  
+.foot
+{
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(135deg,rgba(49,24,131,0.7) 0%, rgba(72,56,149,0.5) 100%),
+    url(".github/images/grass.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    
+     
+}
+.foot::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+   height: 20rem;
+    background: url(".github/images/wave-large2.png") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: 3;
+
+}
+
  
 
 .title-heading{
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 3rem;
-    color: rgba(37, 0, 138, 0.7);
+    color: rgba(17, 2, 58, 0.7);
     font-size: large;
      
     
 }
  
+ 
 
-.title-heading h1{
-    font-family: 'Aldrich', sans-serif;
-    font-size: 4rem;
-  
-}
-
-.title-heading p{
-    text-transform: lowercase;
-}
+ 
 
 .activities-grid{
+    
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+     
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     grid-gap: 1.5rem;
+    
      
 
 }
@@ -215,9 +274,16 @@ label {
     height: 40rem;
     padding: 4rem;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: pointer;
     
      
@@ -230,7 +296,7 @@ label {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(135deg, rgba(49,24,131,0.9), rgba(72,56,149,0.8) 100%);
+    background-image: linear-gradient(135deg, rgba(49,24,131,0.7), rgba(72,56,149,0.7) 100%);
     z-index: -1;
     opacity: 0.6;
     border-radius: 5px;
