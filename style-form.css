@@ -1,20 +1,24 @@
 .wrapper{
-    position: absolute;
-    top: 70%;
+    position: relative;
+     margin-top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 550px;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.03);
     padding: 40px;
+
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 3;
   }
   
   .wrapper .title h1{
     color: #000000;
     text-align: center;
     margin-bottom: 15px;
+    margin-top: 30px;
+
   }
   
   .contact-form{
@@ -52,19 +56,20 @@
   .btn {
       background: #5e686b;
       position: relative;
-      padding: 15px;
+      padding: 5px;
       border-radius: 5px;
       color: #fff;
       cursor: pointer;
       text-transform: uppercase;
+       
   }
   
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 700px){
     .contact-form{
       flex-direction: column;
     }
     .msg textarea{
-      height: 80px;
+      height: 50px;
     }
     .input-fields,
     .msg{
